@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOL 1 · ACIDALIA — Cybertruck on Mars</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="scene"></canvas>
+
+      <div id="boot">
+        <div class="boot-mark">TESLA</div>
+        <div class="boot-title">MARS OPERATIONS</div>
+        <div class="boot-sub">ACIDALIA PLANITIA · SOL 1</div>
+        <div class="boot-bar"><span></span></div>
+      </div>
+
+      <header id="hud-top">
+        <div class="hud-brand">
+          <span class="sol">SOL 1</span>
+          <span class="dot">·</span>
+          <span class="place">ACIDALIA</span>
+        </div>
+        <div class="hud-meta">
+          <span>0.38 g</span>
+          <span>6.1 mbar</span>
+          <span id="clock">14:22 LMST</span>
+        </div>
+      </header>
+
+      <div id="speedo">
+        <div class="speed-row">
+          <span id="speed">0</span>
+          <span class="unit">km/h</span>
+        </div>
+        <div class="speed-sub">
+          <span id="mode">PLANT</span>
+          <span id="boost-pip"></span>
+        </div>
+      </div>
+
+      <aside id="legend">
+        <div class="leg-title">DRIVE</div>
+        <div><kbd>W A S D</kbd> / arrows — steer</div>
+        <div><kbd>SPACE</kbd> brake</div>
+        <div><kbd>SHIFT</kbd> boost</div>
+        <div><kbd>C</kbd> camera</div>
+        <div><kbd>R</kbd> reset</div>
+        <div><kbd>CLICK</kbd> look · Esc release</div>
+      </aside>
+
+      <footer id="hud-bottom">
+        <span>CYBERTRUCK · AWD</span>
+        <span id="cam-label">CHASE</span>
+        <span>STARSHIP 1.1 km ENE</span>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
